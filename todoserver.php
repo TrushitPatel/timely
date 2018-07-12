@@ -33,8 +33,8 @@
 		$tcategory = mysqli_real_escape_string($db, $_POST['tcategory']);
 		$tdesc = mysqli_real_escape_string($db, $_POST['tdesc']);
 		//baki//kadach done--
-		$endtime = date('H:i:s', strtotime($_POST['endtime']));
-		$starttime = date('H:i:s', strtotime($_POST['$starttime']));
+		$endtime = date('Y-m-d H:i:s', strtotime($_POST['endtime']));
+		$starttime = date('Y-m-d H:i:s', strtotime($_POST['starttime']));
 
 		$query = "UPDATE  todogoal SET tname=".$tname.",tdesc=".$tdesc.",starttime=".$starttime." ,endtime=".$endtime." WHERE tid=".$tid;
 
@@ -55,7 +55,7 @@
 		else
 			header('location: todo.php');
 	}
-	//done in todo--daily
+	//undone in todo--daily
 	if (isset($_POST['undone'])){
 		$tid = mysqli_real_escape_string($db, $_POST['tid']);
 		$query = "UPDATE todogoal SET iscompleted=0 WHERE tid=".$tid;

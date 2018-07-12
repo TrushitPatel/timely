@@ -69,6 +69,7 @@ form, .content {
 	border: 1px solid #3c763d;
 	margin-bottom: 20px;
 }
+
 .button {
     background-color: #4CAF50;
     border: none;
@@ -80,4 +81,52 @@ form, .content {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+	float:left;
 }
+.button:hover{
+	background-color: #4CAF99;
+
+	margin: 4px 2px;
+	padding:18px 32px;
+}table {
+    border-collapse: collapse;
+		width: 50%;
+
+		float:none;
+}
+.category-table{
+	border-collapse: collapse;
+	width: 20%;
+	float:right;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+#sticky1{
+	position: sticky;
+	  top: 0;
+}
+.content{
+	float:right;
+	margin-right:0;
+}
+#toCircle{
+	border-radius: 50px;
+}
+.edit{
+	outline-color: white;
+	outline-width: 2px;
+	outline: thick;
+}
+.inEdit{
+	float:left;
+}
+.body{
+				background-color: rgb(240, 240, 240);
+			}
